@@ -1,6 +1,6 @@
 {
   "name": "accio-mikronode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "temporal api fix solution",
   "main": "mikronode.js",
   "scripts": {
