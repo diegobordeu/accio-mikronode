@@ -354,9 +354,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	                _this.connection = new _Connection2.default(_extends({}, stream, { close: close }), function (challenge) {
 	                    stream.write(["/login", "=name=" + user, "=password=" + password]);
-	                    var md5 = _crypto2.default.createHash('md5');
-	                    md5.update(Buffer.concat([Buffer.from(nullString + password), Buffer.from(challenge)]));
-	                    stream.write(["/login", "=name=" + user, "=response=00" + md5.digest("hex")]);
+	                    // var md5 = _crypto2.default.createHash('md5');
+	                    // md5.update(Buffer.concat([Buffer.from(nullString + password), Buffer.from(challenge)]));
+	                    // stream.write(["/login", "=name=" + user, "=response=00" + md5.digest("hex")]);
 	                }, { resolve: resolve, reject: reject });
 	                _this.connection.setDebug(_debug.get(_this));
 	                promise.then(function () {
